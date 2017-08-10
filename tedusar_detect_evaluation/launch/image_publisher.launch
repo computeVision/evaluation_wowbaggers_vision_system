@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <node name="my_publisher" pkg="tedusar_detect_evaluation" type="image_publisher" output="screen">
+
+    <!-- folder, pictures -->
+    <param name="dir" type="string" value="$(env HOME)/evaluation/pictures/wowbagger_pos/" />
+
+    <!-- For additional debug output -->
+    <param name="debug" type="bool" value="true"/>
+
+  </node>
+</launch>

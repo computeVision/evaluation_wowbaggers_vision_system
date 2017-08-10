@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <node name="overlapping_rect" pkg="tedusar_detect_evaluation" type="overlapping_rect" output="screen">
+  
+    <!-- folder, pictures -->
+    <param name="patches" type="string" value="$(env HOME)/evaluation/output/wowbagger_pos_patches_detector/patches" />
+    <param name="face_cascade" type="string" value="$(env HOME)/evaluation/lib/haarcascade_frontalface_alt.xml" />
+    <param name="eye_cascade" type="string" value="$(env HOME)/evaluation/lib/haarcascade_eye_tree_eyeglasses.xml" />
+
+    <!-- For additional debug output -->
+    <param name="debug" type="bool" value="true"/>
+
+  </node>
+</launch>

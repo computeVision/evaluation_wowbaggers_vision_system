@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <node name="my_publisher" pkg="tedusar_detect_evaluation" type="image_publisher" output="screen">
+
+    <!-- folder, pictures -->
+   <!--  <param name="dir" type="string" value="$(env HOME)/Dropbox/evaluation/pictures/testing_pic/" /> -->
+    <param name="dir" type="string" value="$(env HOME)/Dropbox/evaluation/pictures/testing_pic/" />
+    <param name="subscribe" type="string" value="/toimagepublisher" />
+    <param name="pub_rect" type="string" value="/tooverlapping" />
+    <param name="pub_roc" type="string" value="/toroc" />
+    <param name="pub_cnn" type="string" value="/tocnn" />
+
+    <!-- For additional debug output -->
+    <param name="debug" type="bool" value="true"/>
+    <param name="cnn" type="bool" value="false"/>
+
+  </node>
+
+  <node name="overlapping_rect" pkg="tedusar_detect_evaluation" type="overlapping_rect" output="screen">
+
+    <!-- folder, pictures -->
+    <param name="patches" type="string" value="$(env HOME)/evaluation/output/wowbagger_pos_patches_detector/patches" />
+    <param name="face_cascade" type="string" value="$(env HOME)/Dropbox/evaluation/lib/haarcascade_frontalface_alt.xml" />
+    <param name="eye_cascade" type="string" value="$(env HOME)/Dropbox/evaluation/lib/haarcascade_eye_tree_eyeglasses.xml" />
+
+    <param name="subscribe_path" type="string" value="/tooverlapping" />
+    <!-- For additional debug output -->
+    <param name="debug" type="bool" value="true"/>
+
+  </node>
+
+  <node name="roc_choice" pkg="tedusar_detect_evaluation" type="roc_choice" output="screen">
+
+    <!-- folder, pictures -->
+    <param name="plot" type="string" value="$(env HOME)/Dropbox/evaluation/pythonScripts/roc_curve.py $(env HOME)/Dropbox/evaluation/pythonScripts/score" />
+    <param name="xml_files" type="string" value="$(env HOME)/Dropbox/evaluation/xml/testing_xml/" />
+    <param name="score" type="string" value="$(env HOME)/Dropbox/evaluation/pythonScripts/score" />
+    <param name="subscribe" type="string" value="/toroc" />
+    <param name="subscribecnn" type="string" value="/toroc" />
+
+    <param name="dir" type="string" value="$(env HOME)/Dropbox/evaluation/pictures/testing_pic/" />
+
+    <!-- For additional debug output -->
+    <param name="debug" type="bool" value="true"/>
+    <param name="cnn" type="bool" value="false"/>
+
+  </node>
+
+</launch>

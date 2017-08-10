@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <node name="roc_choice" pkg="tedusar_detect_evaluation" type="roc_choice" output="screen">
+  
+    <!-- folder, pictures -->
+    <param name="patches" type="string" value="$(env HOME)/evaluation/output/wowbagger_pos_patches_detector/patches" />
+    <param name="plot" type="string" value="$(env HOME)/evaluation/pythonScripts/roc_curve.py $(env HOME)/evaluation/pythonScripts/score" />
+    <param name="xml_files" type="string" value="$(env HOME)/evaluation/xml/wowbagger_pos/" />
+    <param name="score" type="string" value="$(env HOME)/evaluation/pythonScripts/score" />
+
+    <!-- For additional debug output -->
+    <param name="debug" type="bool" value="true"/>
+
+  </node>
+</launch>

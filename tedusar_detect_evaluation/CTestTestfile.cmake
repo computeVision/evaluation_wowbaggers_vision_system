@@ -1,0 +1,9 @@
+# CMake generated Testfile for 
+# Source directory: /home/plorenz/ros_pkg/src/tedusar_perception/tedusar_detect_evaluation
+# Build directory: /home/plorenz/ros_pkg/src/tedusar_perception/tedusar_detect_evaluation
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+ADD_TEST(_ctest_tedusar_detect_evaluation_gtest_utest "/home/plorenz/ros_pkg/src/tedusar_perception/tedusar_detect_evaluation/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/indigo/share/catkin/cmake/test/run_tests.py" "/home/plorenz/ros_pkg/src/tedusar_perception/tedusar_detect_evaluation/test_results/tedusar_detect_evaluation/gtest-utest.xml" "--return-code" "/home/plorenz/ros_pkg/src/tedusar_perception/tedusar_detect_evaluation/devel/lib/tedusar_detect_evaluation/utest --gtest_output=xml:/home/plorenz/ros_pkg/src/tedusar_perception/tedusar_detect_evaluation/test_results/tedusar_detect_evaluation/gtest-utest.xml")
+ADD_TEST(_ctest_tedusar_detect_evaluation_nosetests_test "/home/plorenz/ros_pkg/src/tedusar_perception/tedusar_detect_evaluation/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/indigo/share/catkin/cmake/test/run_tests.py" "/home/plorenz/ros_pkg/src/tedusar_perception/tedusar_detect_evaluation/test_results/tedusar_detect_evaluation/nosetests-test.xml" "--return-code" "/usr/bin/cmake -E make_directory /home/plorenz/ros_pkg/src/tedusar_perception/tedusar_detect_evaluation/test_results/tedusar_detect_evaluation" "/usr/bin/nosetests-2.7 -P --process-timeout=60 --where=/home/plorenz/ros_pkg/src/tedusar_perception/tedusar_detect_evaluation/test --with-xunit --xunit-file=/home/plorenz/ros_pkg/src/tedusar_perception/tedusar_detect_evaluation/test_results/tedusar_detect_evaluation/nosetests-test.xml")
+SUBDIRS(gtest)

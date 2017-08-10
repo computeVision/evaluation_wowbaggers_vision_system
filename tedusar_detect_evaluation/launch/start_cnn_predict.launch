@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node name="my_publisher" pkg="tedusar_detect_evaluation" type="image_publisher" output="screen">
+
+    <!-- folder, pictures -->
+    <param name="dir" type="string" value="$(env HOME)/evaluation/pictures/wowbagger_pos/" />
+
+    <!-- For additional debug output -->
+    <param name="debug" type="bool" value="true"/>
+
+  </node>
+
+  <node name="tedusar_cnn_prediction_node" pkg="tedusar_cnn_detection" type="tedusar_cnn_prediction_node.py" output="screen">
+ 
+    <!-- Overfeat network -->
+    <param name="overfeat_weights" type="string" value="$(env HOME)/data/overfeat/net_weight_0"/>
+
+    <!-- Camera -->
+    <param name="subscribe_cam" type="string" value="cam/imacnn" />
+
+    <!-- Load pretrained classifier -->
+    <param name="trained_directory" type="string" value="$(find tedusar_cnn_detection)/trained/"/> 
+    <param name="load_name" type="string" value="cnn_trained_victims"/>
+
+    <!-- For additional debug output -->
+    <param name="debug" type="bool" value="false"/>
+
+    <!-- Use for local, no ray cast only testing -->
+    <param name="local" type="bool" value="false"/>
+    <param name="subscribe_local_cam" type="string" value="cam/imacnn"/>
+  </node>
+
+</launch>

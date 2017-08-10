@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: tedusar_detect_evaluation
+Description: Description of tedusar_detect_evaluation
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: 

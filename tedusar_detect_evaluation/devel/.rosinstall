@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/plorenz/ros_pkg/src/tedusar_perception/tedusar_detect_evaluation/devel/setup.sh

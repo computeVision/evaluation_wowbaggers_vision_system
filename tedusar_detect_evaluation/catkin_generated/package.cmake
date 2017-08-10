@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "tedusar_detect_evaluation")
+set(tedusar_detect_evaluation_MAINTAINER "jester <jester@todo.todo>")
+set(tedusar_detect_evaluation_DEPRECATED "")
+set(tedusar_detect_evaluation_VERSION "0.0.0")
+set(tedusar_detect_evaluation_BUILD_DEPENDS "message_generation" "roscpp" "std_msgs")
+set(tedusar_detect_evaluation_RUN_DEPENDS "message_runtime" "roscpp" "std_msgs")
+set(tedusar_detect_evaluation_BUILDTOOL_DEPENDS "catkin")

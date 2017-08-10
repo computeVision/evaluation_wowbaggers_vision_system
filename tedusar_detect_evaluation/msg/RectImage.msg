@@ -1,0 +1,11 @@
+Header header
+string image_name
+string dir
+string rotation
+int32 object1
+int32 object2
+int32 object3
+int32 object4
+sensor_msgs/Image sensor_msg
+int32 cnn
+int32 subscribed
