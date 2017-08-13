@@ -3,6 +3,8 @@ Evaluation and Improvement of the Current Victim Detection System of a Rescue Ro
 
 [![Build Status](https://travis-ci.org/tompollard/phd_thesis_markdown.svg?branch=master)](https://travis-ci.org/tompollard/phd_thesis_markdown)  
 
+Source: http://www.ist.tugraz.at/ais-wiki/victimdetection
+
 This project presents an analysis of the current state-of-the-art of the Wowbagger’s
 Face Detection, in order to find a better approach for detecting victims,
 in our case dolls. Wowbagger is the name of the robot, who will send regularly
