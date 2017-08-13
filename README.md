@@ -34,7 +34,11 @@ A toolchain is provided to start the project out of the box.
 
 ## Usage
 
-    make help // shows you a list of options
+   
+   ![img](https://github.com/computeVision/evaluation_wowbaggers_vision_system/blob/master/thesis/detection.png)   
+   
+   The color yellow indicates the ground truth (labeled by [labelme](http://labelme.csail.mit.edu)) and the red color indicates the actual detection. A percentage is calculated, how much those two rectangles are overlapping. 
+   
 
 ## History
 
