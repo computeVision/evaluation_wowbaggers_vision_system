@@ -25,6 +25,20 @@ set of specific sensors, those provide information about the environment.
 In this case, we have “Wowbagger”, the autonomous robot of the RoboCup Rescue
 Team of Graz University of Technology.
 
+## Citation
+
+```
+@INPROCEEDINGS{8468605,
+  author={Lorenz, Peter and Steinbauer, Gerald},
+  booktitle={2018 IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR)}, 
+  title={The RoboCup Rescue Victim Dataset}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={10.1109/SSRR.2018.8468605}}
+```
+
 ## Installation
 
 A toolchain is provided to start the project out of the box.
