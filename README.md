@@ -1,7 +1,7 @@
 # Evaluation of a robot's ([Wowbagger](http://www.ist.tugraz.at/ais-wiki/wowbagger)) Detection System
 Evaluation and Improvement of the Current Victim Detection System of a Rescue Robot [Wowbagger](http://www.ist.tugraz.at/ais-wiki/wowbagger)
 
-[![Build Status](https://travis-ci.org/tompollard/phd_thesis_markdown.svg?branch=master)](https://travis-ci.org/tompollard/phd_thesis_markdown)  
+
 
 Source: http://www.ist.tugraz.at/ais-wiki/victimdetection
 
